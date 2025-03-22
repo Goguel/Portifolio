@@ -12,6 +12,7 @@
 .header span {
     font-size: 24px;
     font-weight: bold;
+    color: var(--colorWhite);
 }
 
 .header a {
