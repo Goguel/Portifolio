@@ -6,27 +6,21 @@ import styles from './Home.module.css'
 
 function Home() {
     return (
-        <>
-            <Header />
-            <Container>
-                <section className={styles.home}>
-                    <div className={styles.apresentacao}>
-                    <p>
-                        Olá, sou <br/>
-                        <span>Miguel Xavier</span> <br/>
-                        Dev Full Stack
-                    </p>
-                    <Link to="/sobre" className={`${styles.btn} ${styles.btnInfo}`}>
-                        Saiba mais
-                    </Link>
-                    </div>
-                    <figure>
-                    <img className={styles.img_home} src="/feeling-proud-blue.svg" alt="Imagem da home" />
-                    </figure>
-                </section>
-            </Container>
-            <Footer />
-    </>
+        <section className={styles.home}>
+            <div className={styles.apresentacao}>
+            <p>
+                Olá, sou <br/>
+                <span>Miguel Xavier</span> <br/>
+                Dev Full Stack
+            </p>
+            <Link to="/sobre" className={`${styles.btn} ${styles.btnInfo}`}>
+                Saiba mais
+            </Link>
+            </div>
+            <figure>
+            <img className={styles.img_home} src="/feeling-proud-blue.svg" alt="Imagem da home" />
+            </figure>
+        </section>
     )
 }
 
