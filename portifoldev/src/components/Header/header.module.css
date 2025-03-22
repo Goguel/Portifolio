@@ -24,6 +24,5 @@
 .header a:hover {
     color: var(--colorRed);
     font-size: 20px;
-    padding-right: 14px;
     font-weight: bold;
 }

@@ -7,7 +7,21 @@ function App() {
   return (
     <>
       <Header />
-      Conteúdo
+      <section className='container'>
+        <div className="apresentacao">
+          <p>
+            Olá, sou <br/>
+            <span>Miguel Xavier</span> <br/>
+            Dev Full Stack
+          </p>
+          <button className="btn Info">
+            Saiba mais
+          </button>
+        </div>
+        <figure>
+          <img className="img-home" src="/feeling-proud-blue.svg" alt="Imagem da home" />
+        </figure>
+      </section>
       <Footer />
     </>
   )
