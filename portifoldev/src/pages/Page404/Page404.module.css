@@ -1,0 +1,21 @@
+.txt2 {
+    padding-top: 32px;
+
+}
+
+.txts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bigtxt, .redtxt {
+    font-size: 300px;
+    color: var(--colorRed);
+    font-weight: bold;
+}
+
+.redtxt {
+    font-size: 24px;
+}
