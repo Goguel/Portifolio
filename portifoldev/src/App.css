@@ -1,7 +1,7 @@
 /* css da Home */
 .container {
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
 
     display: flex;
     align-items: center;
@@ -29,7 +29,11 @@
     font-weight: bold;
     border: 0;
     border-radius: 25px;
-    cursor: pointer
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .Info {
