@@ -1,11 +1,14 @@
 import './App.css'
-import Header from './components/Header'
+import Footer from './components/Footer/footer.index'
+import Header from './components/Header/header.index'
 
 function App() {
 
   return (
     <>
       <Header />
+      Conteúdo
+      <Footer />
     </>
   )
 }
