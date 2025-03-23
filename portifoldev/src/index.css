@@ -6,6 +6,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
+  --text: "opa";
   --colorPrimary: #16213E;
   --colorSecondary: #0F3460;
   --colorTerceary: #533483;

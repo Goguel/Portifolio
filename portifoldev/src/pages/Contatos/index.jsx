@@ -1,6 +1,3 @@
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import Container from "../../components/Container";
 import styles  from './Contatos.module.css'
 import { FiMail } from "react-icons/fi";
 import { IoLogoGithub } from "react-icons/io";

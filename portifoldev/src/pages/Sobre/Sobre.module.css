@@ -1,0 +1,66 @@
+/*Foto e biografia*/
+.bio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 14px;
+}
+
+.avatar {
+    width: 300px;
+    height: 300px;
+    margin-right: 100px;
+    border-radius: 50%;
+}
+
+.txts {
+    text-align: left;
+    margin-top: 14px;
+}
+
+.avatar:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
+.avatar:not(:hover) {
+    transition: 0.7s;
+}
+
+
+/*Tecnologias e ferramentas*/
+
+.techs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.icones {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone {  
+    margin: 10px;  
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+}
+
+.spring, .java, .javascript, .git, .postgre, .vscode, .intellij, .react{
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: var(--colorPrimary);
+}
+
+.txt {
+    margin-bottom: 10px;
+    color: var(--colorWhite);
+    font-weight: bold;
+}
+
