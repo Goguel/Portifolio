@@ -21,7 +21,6 @@
 
 .card_icones {
     font-size: 30px;
-    padding-top: 100px;
     display: flex;
     gap: 10px;
     color: var(--colorRed);
@@ -47,6 +46,7 @@
     color: var(--colorWhite);
     width: 70%;
     align-items: center;
+    text-decoration: none;
 }
 
 .card_button:hover {
