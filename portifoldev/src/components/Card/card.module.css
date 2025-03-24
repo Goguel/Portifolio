@@ -1,0 +1,60 @@
+.card {
+    width: 300px;
+    height: 300px;
+    background-color: var(--colorSoft-white);
+    color: var(--colorGray);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 0 #22222270;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h3 {
+    color: var(--colorPrimary);
+}
+
+.card p {
+    color: var(--colorGray);
+}
+
+.card_icones {
+    font-size: 30px;
+    padding-top: 100px;
+    display: flex;
+    gap: 10px;
+    color: var(--colorRed);
+}
+
+.card_button {
+    width: 100%;
+    background-color: var(--colorPrimary);
+    color: var(--colorWhite);
+    border-radius: 20px;
+    padding: 7px;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: end;
+    padding-right: 25px;
+    align-items: center;
+}
+
+.card_button p {
+    margin-right: 10px;
+    font-size: 15px;
+    color: var(--colorWhite);
+    width: 70%;
+    align-items: center;
+}
+
+.card_button:hover {
+    background-color: var(--colorTerceary);
+    transition: 0.3s;
+}
+
+.card_button:not(:hover) {
+    background-color: var(--colorPrimary);
+    transition: 0.3s;
+}
