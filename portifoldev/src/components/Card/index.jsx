@@ -2,7 +2,6 @@ import styles from './Card.module.css'
 import { BsFiletypeHtml, BsFiletypeCss, BsFiletypeJs, BsFiletypeJsx } from "react-icons/bs";
 import { SiVite } from "react-icons/si";
 import { FaCircleArrowRight } from "react-icons/fa6";
-import { Link } from 'react-router-dom'
 
 function Card({ name, description, html_url }) {
     return (
@@ -16,9 +15,9 @@ function Card({ name, description, html_url }) {
                     <BsFiletypeJsx />
                     <SiVite />
             </div>
-            <Link to={html_url} className={styles.card_button}>
+            <a href={html_url} target="_blank"  rel="noopener noreferrer" className={styles.card_button}>
               <p>Sabia mais</p><FaCircleArrowRight />
-            </Link>
+            </a>
 
         </section>
     )
