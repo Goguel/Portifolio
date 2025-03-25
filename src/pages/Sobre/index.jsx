@@ -1,5 +1,5 @@
 import styles from './Sobre.module.css';
-import avatar from './images/avatar.jpg';
+import avatar from './images/Avatar.jpg';
 import { SiSpring } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
