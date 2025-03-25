@@ -63,29 +63,34 @@
     font-weight: bold;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
     .bio {
         flex-direction: column;
         padding-inline: 20px;
         gap: 1rem;
     }
     .avatar {
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 250px;
+        max-height: 250px;
     }
     .icones {
         grid-template-columns: auto auto auto auto ;
-        gap: 2.75rem;
+        gap: 2.5rem;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 560px) {
     .techs {
         padding-inline: 1rem;
+    }
+    .avatar {
+        width: 200px;
+        height: 200px;
     }
     .icones {
         padding-inline: 1rem;
         grid-template-columns: auto auto;
         gap: 2rem;
+        margin-bottom: 2rem;
     }
 }

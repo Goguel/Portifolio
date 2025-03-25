@@ -5,10 +5,10 @@ function Home() {
     return (
         <section className={styles.home}>
             <div className={styles.apresentacao}>
-            <p>
-                Olá, sou <br/>
-                <span>Miguel Xavier</span> <br/>
-                Dev Full Stack
+            <p className={styles.txt}>
+                <p>Olá, sou</p>
+                <h1 className={styles.nome}>Miguel Xavier</h1> 
+                <p>Dev Full Stack</p>
             </p>
             <Link to="/sobre" className={`${styles.btn} ${styles.btnInfo}`}>
                 Saiba mais

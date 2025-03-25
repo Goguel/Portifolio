@@ -1,7 +1,7 @@
 import styles  from './Contatos.module.css'
 import { FiMail } from "react-icons/fi";
 import { IoLogoGithub } from "react-icons/io";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaInstagram } from "react-icons/fa";
 
 function Contatos() {
     return (
@@ -19,6 +19,9 @@ function Contatos() {
                 </a>
                 <a href='https://www.linkedin.com/in/miguel-xavier-de-morais/' target='_blank' rel='noopener noreferrer'>
                 <FaLinkedin className={styles.icone} />
+                </a>
+                <a href='https://www.instagram.com/miguelxdev/' target='_blank' rel='noopener noreferrer'>
+                <FaInstagram className={styles.icone} />
                 </a>
             </div>
         </section>
