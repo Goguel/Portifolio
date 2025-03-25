@@ -29,3 +29,45 @@
     color: var(--colorRed);
     font-weight: bold;
 }
+
+.menuButton {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menuButton {
+        font-size: 1.5rem;
+        position: absolute;
+        right: 20px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .menuSandwich {
+        display: none;
+    }
+
+    .show{
+        display: flex;
+        width: 50%;
+        height: auto;
+        position: absolute;
+        top: 45px;
+        right: 0;
+        background-color: var(--colorPrimary);
+        border-radius: 20px 0 20px 20px;
+        flex-direction: column;
+        align-items:center;
+        padding: 1.25rem;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .show {
+        width: 75%;
+    }
+}
