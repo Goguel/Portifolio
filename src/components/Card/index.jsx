@@ -1,4 +1,4 @@
-import styles from './Card.module.css'
+import styles from './card.module.css'
 import { BsFiletypeHtml, BsFiletypeCss, BsFiletypeJs, BsFiletypeJsx } from "react-icons/bs";
 import { SiVite } from "react-icons/si";
 import { FaCircleArrowRight } from "react-icons/fa6";
