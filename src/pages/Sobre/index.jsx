@@ -12,7 +12,6 @@ import { FaReact } from "react-icons/fa";
 function Sobre() {
     return (
         <section className={styles.sobre}>
-
             <div className={styles.bio}>
                 <img src={avatar} alt="Foto de Miguel Xavier" className={styles.avatar} />
                 <div className={styles.txts}>
