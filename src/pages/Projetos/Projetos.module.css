@@ -1,8 +1,13 @@
 .projetos {
+    padding-block: 2.5rem;
+}
+
+.projetos h2{
     text-align: center;
 }
 
 .lista {
+    padding-block: 1.5rem;
     width: 100%;
     display: flex;
     flex-wrap: wrap;

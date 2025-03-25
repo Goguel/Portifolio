@@ -16,7 +16,7 @@ function Card({ name, description, html_url }) {
                     <SiVite />
             </div>
             <a href={html_url} target="_blank"  rel="noopener noreferrer" className={styles.card_button}>
-              <p>Sabia mais</p><FaCircleArrowRight />
+              <p>Saiba mais</p><FaCircleArrowRight />
             </a>
 
         </section>
