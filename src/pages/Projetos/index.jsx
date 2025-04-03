@@ -9,9 +9,11 @@ function Projetos() {
         const buscarRepositorios = async () => {
             const response = await fetch('https://api.github.com/users/goguel/repos?page=1&per_page=50')
             const response2 = await fetch('https://api.github.com/users/goguel-s-cia/repos?page=1&per_page=50')
+            const response3 = await fetch('https://api.github.com/repos/Null-bank/null_bank_backend')
             const data = await response.json()
             const data2 = await response2.json()
-            setRepositories([...data, ...data2])
+            const data3 = await response3.json()
+            setRepositories([...data, ...data2, data3])
         }
         buscarRepositorios()
     }, [])
