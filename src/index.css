@@ -1,16 +1,15 @@
 :root {
-  font-family: 'Tektur', monospace;
+  font-family: 'Querial', monospace;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --text: "opa";
-  --colorPrimary: #16213E;
-  --colorSecondary: #0F3460;
-  --colorTerceary: #533483;
-  --colorRed: #E94560;
-  --colorSoft-white: #f1f1f1;
+  --colorPrimary: #134074;
+  --colorSecondary: #13315C;
+  --colorTerceary: #0B2545;
+  --colorRed: #8DA9C4;
+  --colorSoft-white: #EEF4ED;
   --colorWhite: #fefefe;
   --colorBlack: #111;
   --colorGray: #222222;
