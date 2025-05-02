@@ -3,8 +3,9 @@ const projetos = [
     name: "StudyRats",
     description: "Aplicação web para estímulo de estudos em grupo.",
     image: "/projetosImgs/studyrats.png",
-    techs: ["Java", "Spring Boot", "Angular", "PostgreSQL", "Docker"],
-    github: "https://github.com/Goguel/StudyRats"
+    techs: ["Java", "Docker", "PostgreSQL", "Spring Boot", "Spring Security", "Angular", "RxJS", "Typescript"],
+    github: "https://github.com/Goguel/StudyRats",
+    live: "https://studyrats-frontend.onrender.com/"
   },
   {
     name: "EclipseHotel",
