@@ -34,7 +34,7 @@ function Sobre() {
                 </div>
                 <div className={styles.javascript}>
                     <IoLogoJavascript className={styles.icone} />
-                <p className={styles.txt}>Javascript</p>
+                <p className={styles.txt}>JavaScript</p>
                 </div>
                 <div className={styles.git}>
                     <FaGitAlt className={styles.icone} />
