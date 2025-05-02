@@ -18,7 +18,7 @@
 
 .nome {
     color: var(--colorRed);
-    max-width: 23rem;
+    max-width: 25.5rem;
     width: 0;
     border-right: 4px solid;
     white-space: nowrap;
