@@ -1,14 +1,13 @@
-import { Outlet } from "react-router-dom"
 import Container from "../../components/Container"
 import Footer from "../../components/Footer"
 import Header from "../../components/Header"
 
-function PageBase() {
+function PageBase({ children }) {
     return (
         <main>
             <Header />
             <Container>
-                 <Outlet />
+                 { children }
             </Container>
             <Footer />
         </main>

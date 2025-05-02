@@ -10,13 +10,18 @@ function AppRoutes() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<PageBase />} >
-                    <Route index element={ <Home /> } />
-                    <Route path="/sobre" element={ <Sobre /> } />
-                    <Route path="/projetos" element={ <Projetos /> } />
-                    <Route path="/contatos" element={ <Contatos /> } />
-                    <Route path="*" element={ <Page404 /> } />
-                </Route>
+                <Route 
+                    path="/" 
+                    element={
+                        <PageBase>
+                            <Home />
+                            <Sobre />
+                            <Projetos /> 
+                            <Contatos />
+                        </PageBase>
+                    }
+                />
+               
             </Routes>
         </BrowserRouter>
     )

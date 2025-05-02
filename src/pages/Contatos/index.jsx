@@ -5,7 +5,7 @@ import { FaLinkedin, FaInstagram } from "react-icons/fa";
 
 function Contatos() {
     return (
-        <section className={styles.contatos}>
+        <section id="contatos" className={styles.contatos}>
             <h2>Contatos</h2>
             <h3>Entre em contato</h3>
             <p>Para que possamos conversar mais sobre.</p>

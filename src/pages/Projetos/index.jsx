@@ -4,7 +4,7 @@ import projetos from '../../data/projetos.js'
 
 function Projetos() {
     return (
-        <section className={styles.projetos}>
+        <section id="projetos" className={styles.projetos}>
             <h2>Projetos</h2>
             <section className={styles.lista}>
                 {projetos.map((projeto) => (

@@ -20,10 +20,10 @@ function Header() {
                 className={`${ styles.menuSandwich } ${ showMenu ? styles.show : ''}`}
                 onClick={toggleMenu}
             >
-                <Link to="/">Home</Link>
-                <Link to="/sobre">Sobre</Link>
-                <Link to="/projetos">Projetos</Link>
-                <Link to="/contatos">Contatos</Link>
+                <a href="#home">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contatos">Contato</a>
             </nav>
             <div 
                 className={styles.menuButton}
