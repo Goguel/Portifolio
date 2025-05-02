@@ -1,22 +1,36 @@
 import { useEffect, useState } from 'react'
 import Card from '../../components/Card'
 import styles from './Projetos.module.css'
+
 function Projetos() {
 
-    const [ repositories, setRepositories ] = useState([])
+    const [ repositories, setRepositories ] = useState([]);
 
     useEffect(() => {
         const buscarRepositorios = async () => {
-            const response = await fetch('https://api.github.com/users/goguel/repos?page=1&per_page=50')
-            const response2 = await fetch('https://api.github.com/users/goguel-s-cia/repos?page=1&per_page=50')
-            const response3 = await fetch('https://api.github.com/repos/Null-bank/null_bank_backend')
-            const data = await response.json()
-            const data2 = await response2.json()
-            const data3 = await response3.json()
-            setRepositories([...data, ...data2, data3])
-        }
-        buscarRepositorios()
-    }, [])
+            const responses = await Promise.all([
+                fetch('https://api.github.com/users/goguel/repos?page=1&per_page=50'),
+                fetch('https://api.github.com/users/goguel-s-cia/repos?page=1&per_page=50'),
+                fetch('https://api.github.com/repos/Null-bank/null_bank_backend')
+            ])
+
+            const data = await Promise.all(responses.map(res => res.json()));
+            const allRepos = [...data[0], ...data[1], data[2]];
+
+            const reposComLinguagem = await Promise.all(
+                allRepos.map(async (repo) => {
+                    const langResponse = await fetch(repo.languages_url);
+                    const languages = await langResponse.json();
+                    return { ...repo, languages};
+                })
+            );
+
+            setRepositories(reposComLinguagem)
+        };
+
+        buscarRepositorios();
+
+    }, []);
 
     return (
         <section className={styles.projetos}>
@@ -32,7 +46,7 @@ function Projetos() {
                                 name = {repo.name}   
                                 description = {repo.description} 
                                 html_url = {repo.html_url} 
-                                language = {repo.language}
+                                languages = {repo.languages}
                             />
                         )
                     )
