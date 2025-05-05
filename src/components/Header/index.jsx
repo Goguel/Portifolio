@@ -13,17 +13,16 @@ function Header() {
 
     return (
         <header className={styles.header}>
-            <Link to="/">
+            <a href="#home">
             <span>miguelXavier.dev</span>
-            </Link>
+            </a>
             <nav 
                 className={`${ styles.menuSandwich } ${ showMenu ? styles.show : ''}`}
                 onClick={toggleMenu}
             >
-                <a href="#home">Início</a>
                 <a href="#sobre">Sobre</a>
                 <a href="#projetos">Projetos</a>
-                <a href="#contatos">Contato</a>
+                <a href="#contatos">Contatos</a>
             </nav>
             <div 
                 className={styles.menuButton}

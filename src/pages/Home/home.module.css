@@ -15,12 +15,11 @@
 
 .home p {
     font-size: 48px;
-    font-weight: bold;
 }
 
 .nome {
     color: var(--colorRed);
-    max-width: 25.5rem;
+    max-width: 27.5rem;
     width: 0;
     border-right: 4px solid;
     white-space: nowrap;
