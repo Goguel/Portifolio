@@ -38,6 +38,8 @@ function Sobre() {
                             { nome: "VS Code", arquivo: "vscode.svg" },
                             { nome: "IntelliJ", arquivo: "intellij.svg" },
                             { nome: "WebStorm", arquivo: "webstorm.svg" },
+                            { nome: "Render", arquivo: "render.svg" },
+                            { nome: "Insomnia", arquivo: "insomnia.svg" },                          
                             
                         ].map((tech, idx) => (
                             <div key={idx} className={styles.tecnologia}>

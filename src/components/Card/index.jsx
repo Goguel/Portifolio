@@ -18,6 +18,7 @@ function Card({ name, description, image, techs, github, live }) {
             case 'Docker': return 'docker';
             case 'Angular': return 'angular';
             case 'RxJS': return 'rxjs';
+            case 'Render': return 'render';
             default: return name;
         }
     }
