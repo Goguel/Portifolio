@@ -1,13 +1,5 @@
 import styles from './Sobre.module.css';
 import avatar from './images/Avatar.jpg';
-import { SiSpring } from "react-icons/si";
-import { FaJava } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import { FaGitAlt } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
-import { VscVscode } from "react-icons/vsc";
-import { SiIntellijidea } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
 
 function Sobre() {
     return (
@@ -21,44 +13,60 @@ function Sobre() {
                 </div>
             </div>
 
-            <h3 className={styles.techs}>Tecnologias e ferramentas</h3>
+            <div className={styles.description}>
+                <div className={styles.descriptiontech}>
+                    <h3>Tecnologias e ferramentas</h3>
 
-            <div className={styles.icones}>
-                <div className={styles.spring}>
-                    <SiSpring className={styles.icone} />
-                    <p className={styles.txt}>Spring</p>
+                    <div className={styles.icones}>
+                        {[
+                            { nome: "Java", arquivo: "java.svg" },
+                            { nome: "JavaScript", arquivo: "javascript.svg" },
+                            { nome: "TypeScript", arquivo: "typescript.svg" },
+                            { nome: "C", arquivo: "c.svg" },
+                            { nome: "C++", arquivo: "cpp.svg" },
+                            { nome: "PostgreSQL", arquivo: "postgresql.svg" },
+                            { nome: "Spring", arquivo: "spring.svg" },
+                            { nome: "Html", arquivo: "html.svg" },
+                            { nome: "Css", arquivo: "css.svg" },
+                            { nome: "Angular", arquivo: "angular.svg" },
+                            { nome: "React", arquivo: "react.svg" },
+                            { nome: "Docker", arquivo: "docker.svg" },
+                            { nome: "Vercel", arquivo: "vercel.svg" },
+                            { nome: "Git", arquivo: "git.svg" },
+                            { nome: "GitHub", arquivo: "github.svg" },
+                            { nome: "GitHub Actions", arquivo: "githubactions.svg" },
+                            { nome: "VS Code", arquivo: "vscode.svg" },
+                            { nome: "IntelliJ", arquivo: "intellij.svg" },
+                            { nome: "WebStorm", arquivo: "webstorm.svg" },
+                            
+                        ].map((tech, idx) => (
+                            <div key={idx} className={styles.tecnologia}>
+                                <img 
+                                    src={`/logos/${tech.arquivo}`} 
+                                    alt={tech.nome}
+                                    className={styles.icone}
+                                />
+                                <p className={styles.txt}>{tech.nome}</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-                <div className={styles.java}>
-                    <FaJava className={styles.icone} />
-                    <p className={styles.txt}>Java</p>
-                </div>
-                <div className={styles.javascript}>
-                    <IoLogoJavascript className={styles.icone} />
-                <p className={styles.txt}>JavaScript</p>
-                </div>
-                <div className={styles.git}>
-                    <FaGitAlt className={styles.icone} />
-                <p className={styles.txt}>Git</p>
-                </div>
-                <div className={styles.postgre}>
-                    <BiLogoPostgresql className={styles.icone} />
-                <p className={styles.txt}>Postgre</p>
-                </div>
-                <div className={styles.vscode}>
-                    <VscVscode className={styles.icone} />
-                <p className={styles.txt}>VS Code</p>
-                </div>
-                <div className={styles.intellij}>
-                    <SiIntellijidea className={styles.icone} />
-                <p className={styles.txt}>IntelliJ</p>
-                </div>
-                <div className={styles.react}>
-                    <FaReact className={styles.icone} />
-                <p className={styles.txt}>React</p>
+                <div className={styles.descriptioneduc}>
+                    <h3>Formação acadêmica</h3>
+                    <div className={styles.education}>
+                        <p>Bacharelado em Tecnologia da Informação</p>
+                        <p>Universidade Federal do Rio Grande do Norte (UFRN)</p>
+                        <p>Fevereiro 2024 - Atualmente</p>
+                    </div>
+                    <div className={styles.education}>
+                        <p>Técnico em Informática</p>
+                        <p>Escola Agricola de Jundiaí (EAJ/UFRN)</p>
+                        <p>Março 2021 - Dezembro 2023</p>
+                    </div>
                 </div>
             </div>
         </section>
-    )
+    );
 }
 
-export default Sobre
+export default Sobre;

@@ -30,39 +30,70 @@
     margin-top: 14px;
 }
 
+.description {
+    display: flex;
+    flex-direction: row;;
+    gap: 50px; 
+}
+
+.descriptioneduc, .descriptiontech {
+display: flex;
+flex-direction: column;
+justify-content: top;
+align-items: center;
+gap: 1rem;
+padding-top: 2rem;
+flex: 1; 
+}
+
+/*Formação acadêmica*/
+
+.education {
+    width: 400px;
+    align-self: start;
+    padding: 0.75rem;
+    background-color: var(--colorSoft-white);
+    color: var(--colorGray);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 0 #22222270;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+
 
 /*Tecnologias e ferramentas*/
 
-.techs {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .icones {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto;
-    align-items: center;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    gap: 16px;
     justify-content: center;
-    gap: 1.5rem;
+    align-items: center;
 }
 
-.icone {  
-    margin: 10px;  
-    font-size: 5rem;
-    color: rgb(255, 255, 255);
+.tecnologia {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 80px;
+text-align: center;
 }
 
-.spring, .java, .javascript, .git, .postgre, .vscode, .intellij, .react{
-    text-align: center;
-    margin-top: 1.25rem;
-    background-color: var(--colorPrimary);
+.icone {
+width: 40px;
+height: 40px;
+object-fit: contain;
+transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
 
 .txt {
-    margin-bottom: 0.63rem;
-    color: var(--colorWhite);
-    font-weight: bold;
+margin-top: 8px;
+font-size: 0.9rem;
+color: var(--colorGray);
+}
+  
+.education:hover, .icone:hover {
+    transform: translateY(-5px); 
 }
 
 @media (max-width: 968px) {
@@ -75,8 +106,13 @@
         max-width: 250px;
         max-height: 250px;
     }
+    .description {
+        display: flex;
+        flex-direction: column;
+        gap: 50px; 
+      }
     .icones {
-        grid-template-columns: auto auto auto auto ;
+        grid-template-columns: auto auto auto auto auto ;
         gap: 2.5rem;
     }
 }
@@ -91,7 +127,7 @@
     }
     .icones {
         padding-inline: 1rem;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
         gap: 2rem;
         margin-bottom: 2rem;
     }
