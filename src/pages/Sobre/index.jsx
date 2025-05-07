@@ -8,8 +8,14 @@ function Sobre() {
                 <img src={avatar} alt="Foto de Miguel Xavier" className={styles.avatar} />
                 <div className={styles.txts}>
                     <p>Me chamo <strong>Miguel Xavier de Morais</strong><br />
-                    Dev Full Stack<br />
-                    Experiência em desenvolvimento ...</p>
+                    Desenvolvedor Full Stack<br />
+                    Tenho experiência na criação de APIs RESTFul, integração com banco de dados,<br />
+                    construção de interfaces modernas e responsivas.<br />
+                    Além de conhecimento de Design Patterns, POO, análise de requisitos e boas práticas.</p>
+                    <br />
+                    <p>Adoro solucionar problemas e desafios lógicos, sempre procuro escutar bem e prestar<br />
+                    atenção aos detalhes para encontar a melhor solução possível. Sempre buscando conhecimento,<br />
+                    atualmente, estou me aprofundando em tecnologias como Spring Boot e Angular. </p>
                 </div>
             </div>
 
@@ -32,14 +38,14 @@ function Sobre() {
                             { nome: "React", arquivo: "react.svg" },
                             { nome: "Docker", arquivo: "docker.svg" },
                             { nome: "Vercel", arquivo: "vercel.svg" },
+                            { nome: "Insomnia", arquivo: "insomnia.svg" },
                             { nome: "Git", arquivo: "git.svg" },
                             { nome: "GitHub", arquivo: "github.svg" },
                             { nome: "GitHub Actions", arquivo: "githubactions.svg" },
                             { nome: "VS Code", arquivo: "vscode.svg" },
                             { nome: "IntelliJ", arquivo: "intellij.svg" },
                             { nome: "WebStorm", arquivo: "webstorm.svg" },
-                            { nome: "Render", arquivo: "render.svg" },
-                            { nome: "Insomnia", arquivo: "insomnia.svg" },                          
+                            { nome: "Render", arquivo: "render.svg" },                        
                             
                         ].map((tech, idx) => (
                             <div key={idx} className={styles.tecnologia}>
