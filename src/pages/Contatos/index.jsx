@@ -10,7 +10,7 @@ function Contatos() {
             <h3>Entre em contato</h3>
             <p>Para que possamos conversar mais sobre.</p>
 
-            <div className={styles.icones}>
+            <div className={styles.icones} data-aos="zoom-out">
                 <a href='mailto:miguelxmorais@gmail.com' target='_blank' rel='noopener noreferrer'>
                 <FiMail className={styles.icone} />
                 </a>

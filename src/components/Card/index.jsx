@@ -25,7 +25,7 @@ function Card({ name, description, image, techs, github, live }) {
 
     return (
 
-        <section className={styles.card}>
+        <section className={styles.card} data-aos="zoom-in-left">
 
             <img src={image} alt={`Imagem do projeto ${name}`} className={styles.card_image} />
             <h2>{name}</h2>

@@ -5,8 +5,8 @@ function Sobre() {
     return (
         <section id="sobre" className={styles.sobre}>
             <div className={styles.bio}>
-                <img src={avatar} alt="Foto de Miguel Xavier" className={styles.avatar} />
-                <div className={styles.txts}>
+                <img src={avatar} alt="Foto de Miguel Xavier" className={styles.avatar} data-aos="zoom-in-left"/>
+                <div className={styles.txts} data-aos="zoom-in-right">
                     <p>Me chamo <strong>Miguel Xavier de Morais</strong><br />
                     Desenvolvedor Full Stack<br />
                     Tenho experiência na criação de APIs RESTFul, integração com banco de dados,<br />
@@ -20,7 +20,7 @@ function Sobre() {
             </div>
 
             <div className={styles.description}>
-                <div className={styles.descriptiontech}>
+                <div className={styles.descriptiontech} data-aos="slide-right">
                     <h3>Tecnologias e ferramentas</h3>
 
                     <div className={styles.icones}>
@@ -59,7 +59,7 @@ function Sobre() {
                         ))}
                     </div>
                 </div>
-                <div className={styles.descriptioneduc}>
+                <div className={styles.descriptioneduc} data-aos="slide-left">
                     <h3>Formação acadêmica</h3>
                     <div className={styles.education}>
                         <p>Bacharelado em Tecnologia da Informação</p>

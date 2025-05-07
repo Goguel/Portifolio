@@ -2,7 +2,7 @@ import styles from './home.module.css'
 
 function Home() {
     return (
-        <section id="home" className={styles.home}>
+        <section id="home" className={styles.home} data-aos="fade-up">
             <div className={styles.apresentacao}>
             <p className={styles.txt}>
                 <p>Olá, sou</p>
