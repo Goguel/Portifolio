@@ -7,6 +7,7 @@
     align-items: center;
 
     padding-block: 50px;
+    padding-inline: 1rem;
     gap: 16px;
-
+    overflow-x: hidden;
 }

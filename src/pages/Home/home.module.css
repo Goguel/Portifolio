@@ -20,15 +20,15 @@
 
 .nome {
     color: var(--colorRed);
-    max-width: 27.5rem;
+    max-width: 38.5rem;
     width: 0;
     border-right: 4px solid;
     white-space: nowrap;
     overflow: hidden;
     animation: 
         digitando 4s steps(30) forwards,  
-        cursor .75s step-end 8,
-        desaparecerCursor 0s 4.5s forwards; 
+        cursor 1.75s step-end 8,
+        desaparecerCursor 0s 5.5s forwards; 
 }
 
 @keyframes digitando {

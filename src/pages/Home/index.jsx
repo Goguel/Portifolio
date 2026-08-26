@@ -6,7 +6,7 @@ function Home() {
             <div className={styles.apresentacao}>
             <p className={styles.txt}>
                 <p>Olá, sou</p>
-                <h1 className={styles.nome}>Miguel Xavier</h1> 
+                <h2 className={styles.nome}>Miguel Xavier</h2> 
                 <p>Dev Full Stack</p>
             </p>
             <a href="#sobre" className={`${styles.btn} ${styles.btnInfo}`}>
